@@ -64,7 +64,7 @@ def main():
                 clickable = True
             break
         post_button.click()
-        time.sleep(30)
+        time.sleep(5)
     # Close driver
     driver.close()
 
