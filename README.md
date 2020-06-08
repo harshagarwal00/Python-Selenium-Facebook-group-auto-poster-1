@@ -49,7 +49,7 @@ def main():
 source setup.sh
 ```
 
-Running script
+Running script (Currently only tested on MAC)
 ---------
 After that run the script by runing 
 
