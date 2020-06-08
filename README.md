@@ -56,3 +56,8 @@ After that run the script by runing
 ```
 python3.7 fb-group-poster.py 
 ```
+
+Limitation
+-------
+It does fail in the beginning sometimes or in the middle so then we need to figure where it has failed and continue from there
+
