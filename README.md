@@ -3,14 +3,26 @@ A Python script use Selenium to achieve automatically posting images with text o
 
 Setup
 ----------
- - First of all, install [Python 3](https://www.python.org/downloads/) into your machine
- 
- - Then insall selenium:
+ - Change facebook setting: 
+   1. change to [classic view](https://www.facebook.com/help/645404059595478)
+   2. [Disable 2 step authetnication](https://www.alphr.com/facebook/1006409/two-factor-authentication-2FA-facebook)
+
+ - First of all, install [Python 3](https://www.python.org/downloads/) into your machine. I used python 3.7
+
+ - Install PIP & install selenium:
    ```
-   pip install selenium
-   ```
- - Download the [Chrome Driver](http://chromedriver.chromium.org/downloads) and place it in the same directory with the script.
- 
+	python3.7  get-pip.py		
+	pip3.7 install selenium
+   ```	
+
+ - Check [version of google chrome](https://www.businessinsider.com/what-version-of-google-chrome-do-i-have). I used chrome version 83.0.4103.97.
+
+ - Download the [Chrome Driver](http://chromedriver.storage.googleapis.com/index.html) and place it in the same directory with the script. Make sure chromedriver is same version as google chrome.
+`   I used [Link](http://chromedriver.storage.googleapis.com/index.html?path=83.0.4103.39/).
+	If you are using 83.0.4103.39 chromedriver then no need to run this it is already downloaded and stored.
+
+
+
 Configure the script
 ----------
 You need to edit the script to provide your Facebook account name and password, the message you want to post, whether you want to attach an image, along with its path and the links of the Facebook groups you are the member of:
@@ -31,5 +43,16 @@ def main():
     # Set up paths of images to post
     images_list = ['C:/Users/OEM/Pictures/sample1.jpg','C:/Users/OEM/Pictures/sample2.jpg']
  ```
- 
-After that, run the script by double click on it. Enjoy!
+
+#Run
+```
+source setup.sh
+```
+
+Running script
+---------
+After that run the script by runing 
+
+```
+python3.7 fb-group-poster.py 
+```
