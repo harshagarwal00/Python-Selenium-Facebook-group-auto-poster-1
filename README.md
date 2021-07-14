@@ -1,3 +1,5 @@
+# Currently Broken after facebook GUI update
+
 # Python-Selenium-Facebook-group-auto-poster
 A Python script use Selenium to achieve automatically posting images with text on multiple Facebook groups that you are the member of.
 
